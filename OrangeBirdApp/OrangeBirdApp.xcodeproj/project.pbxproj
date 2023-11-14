@@ -12,6 +12,8 @@
 		A3B071D22B0269B900451899 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B071D12B0269B900451899 /* Item.swift */; };
 		A3B071D42B0269BB00451899 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3B071D32B0269BB00451899 /* Assets.xcassets */; };
 		A3B071D72B0269BB00451899 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3B071D62B0269BB00451899 /* Preview Assets.xcassets */; };
+		A3B071E42B039BDC00451899 /* CallToActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B071E32B039BDC00451899 /* CallToActionButton.swift */; };
+		A3B071E62B039C1100451899 /* OrangeBirdAppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B071E52B039C1100451899 /* OrangeBirdAppViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		A3B071D12B0269B900451899 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		A3B071D32B0269BB00451899 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3B071D62B0269BB00451899 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A3B071E32B039BDC00451899 /* CallToActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallToActionButton.swift; sourceTree = "<group>"; };
+		A3B071E52B039C1100451899 /* OrangeBirdAppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrangeBirdAppViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,9 +57,11 @@
 		A3B071CC2B0269B900451899 /* OrangeBirdApp */ = {
 			isa = PBXGroup;
 			children = (
-				A3B071CD2B0269B900451899 /* OrangeBirdAppApp.swift */,
-				A3B071CF2B0269B900451899 /* ContentView.swift */,
-				A3B071D12B0269B900451899 /* Item.swift */,
+				A3B071DD2B039A4500451899 /* Extensions */,
+				A3B071E12B039A9900451899 /* Support */,
+				A3B071DE2B039A5B00451899 /* Views */,
+				A3B071DF2B039A7200451899 /* Models */,
+				A3B071E02B039A8000451899 /* ViewModels */,
 				A3B071D32B0269BB00451899 /* Assets.xcassets */,
 				A3B071D52B0269BB00451899 /* Preview Content */,
 			);
@@ -68,6 +74,54 @@
 				A3B071D62B0269BB00451899 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A3B071DD2B039A4500451899 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A3B071DE2B039A5B00451899 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A3B071E22B039AAE00451899 /* Components */,
+				A3B071CD2B0269B900451899 /* OrangeBirdAppApp.swift */,
+				A3B071CF2B0269B900451899 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A3B071DF2B039A7200451899 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A3B071D12B0269B900451899 /* Item.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A3B071E02B039A8000451899 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A3B071E52B039C1100451899 /* OrangeBirdAppViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A3B071E12B039A9900451899 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		A3B071E22B039AAE00451899 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A3B071E32B039BDC00451899 /* CallToActionButton.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +194,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3B071E42B039BDC00451899 /* CallToActionButton.swift in Sources */,
 				A3B071D02B0269B900451899 /* ContentView.swift in Sources */,
+				A3B071E62B039C1100451899 /* OrangeBirdAppViewModel.swift in Sources */,
 				A3B071D22B0269B900451899 /* Item.swift in Sources */,
 				A3B071CE2B0269B900451899 /* OrangeBirdAppApp.swift in Sources */,
 			);
