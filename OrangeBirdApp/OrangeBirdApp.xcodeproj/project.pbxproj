@@ -26,6 +26,7 @@
 		A3DC9B1A2B04F4CB00C23835 /* Date+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DC9B192B04F4CB00C23835 /* Date+String.swift */; };
 		A3DC9B1C2B04F5F100C23835 /* String+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DC9B1B2B04F5F100C23835 /* String+Formatter.swift */; };
 		A3DC9B1E2B04F6A600C23835 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DC9B1D2B04F6A600C23835 /* HapticManager.swift */; };
+		A3DC9B262B04FD3700C23835 /* StickyHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DC9B252B04FD3700C23835 /* StickyHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		A3DC9B192B04F4CB00C23835 /* Date+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+String.swift"; sourceTree = "<group>"; };
 		A3DC9B1B2B04F5F100C23835 /* String+Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Formatter.swift"; sourceTree = "<group>"; };
 		A3DC9B1D2B04F6A600C23835 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
+		A3DC9B252B04FD3700C23835 /* StickyHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				A3B071E32B039BDC00451899 /* CallToActionButton.swift */,
+				A3DC9B252B04FD3700C23835 /* StickyHeader.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3DC9B262B04FD3700C23835 /* StickyHeader.swift in Sources */,
 				A3DC9B162B03D25100C23835 /* AppDelegate.swift in Sources */,
 				A3DC9B1C2B04F5F100C23835 /* String+Formatter.swift in Sources */,
 				A3B071E42B039BDC00451899 /* CallToActionButton.swift in Sources */,
