@@ -22,6 +22,7 @@
 		A3DC9B122B03D17000C23835 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = A3DC9B112B03D17000C23835 /* FirebaseMessaging */; };
 		A3DC9B142B03D17000C23835 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = A3DC9B132B03D17000C23835 /* FirebaseStorage */; };
 		A3DC9B162B03D25100C23835 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DC9B152B03D25100C23835 /* AppDelegate.swift */; };
+		A3DC9B182B04F3B000C23835 /* UIScreen+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DC9B172B04F3B000C23835 /* UIScreen+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		A3B071E52B039C1100451899 /* OrangeBirdAppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrangeBirdAppViewModel.swift; sourceTree = "<group>"; };
 		A3DC9B042B03CF3B00C23835 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A3DC9B152B03D25100C23835 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A3DC9B172B04F3B000C23835 /* UIScreen+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		A3B071DD2B039A4500451899 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				A3DC9B172B04F3B000C23835 /* UIScreen+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				A3B071E62B039C1100451899 /* OrangeBirdAppViewModel.swift in Sources */,
 				A3B071D22B0269B900451899 /* Item.swift in Sources */,
 				A3B071CE2B0269B900451899 /* OrangeBirdAppApp.swift in Sources */,
+				A3DC9B182B04F3B000C23835 /* UIScreen+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
