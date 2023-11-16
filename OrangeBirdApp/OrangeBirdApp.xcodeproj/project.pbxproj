@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		A30E9A3C2B0535AC00E4C928 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30E9A3B2B0535AC00E4C928 /* Color+Extension.swift */; };
 		A30E9A3E2B0535E900E4C928 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30E9A3D2B0535E900E4C928 /* UIColor+Extension.swift */; };
+		A30E9A402B053B4200E4C928 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30E9A3F2B053B4200E4C928 /* UIFont+Extension.swift */; };
+		A30E9A422B053B9B00E4C928 /* View+UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30E9A412B053B9B00E4C928 /* View+UIFont.swift */; };
 		A3B071CE2B0269B900451899 /* OrangeBirdAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B071CD2B0269B900451899 /* OrangeBirdAppApp.swift */; };
 		A3B071D02B0269B900451899 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B071CF2B0269B900451899 /* ContentView.swift */; };
 		A3B071D22B0269B900451899 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B071D12B0269B900451899 /* Item.swift */; };
@@ -29,6 +31,8 @@
 /* Begin PBXFileReference section */
 		A30E9A3B2B0535AC00E4C928 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		A30E9A3D2B0535E900E4C928 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		A30E9A3F2B053B4200E4C928 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		A30E9A412B053B9B00E4C928 /* View+UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+UIFont.swift"; sourceTree = "<group>"; };
 		A3B071CA2B0269B900451899 /* OrangeBirdApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrangeBirdApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3B071CD2B0269B900451899 /* OrangeBirdAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrangeBirdAppApp.swift; sourceTree = "<group>"; };
 		A3B071CF2B0269B900451899 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 			children = (
 				A30E9A3B2B0535AC00E4C928 /* Color+Extension.swift */,
 				A30E9A3D2B0535E900E4C928 /* UIColor+Extension.swift */,
+				A30E9A3F2B053B4200E4C928 /* UIFont+Extension.swift */,
+				A30E9A412B053B9B00E4C928 /* View+UIFont.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -236,8 +242,10 @@
 				A3B071D02B0269B900451899 /* ContentView.swift in Sources */,
 				A3B071E62B039C1100451899 /* OrangeBirdAppViewModel.swift in Sources */,
 				A3B071D22B0269B900451899 /* Item.swift in Sources */,
+				A30E9A402B053B4200E4C928 /* UIFont+Extension.swift in Sources */,
 				A3B071CE2B0269B900451899 /* OrangeBirdAppApp.swift in Sources */,
 				A30E9A3E2B0535E900E4C928 /* UIColor+Extension.swift in Sources */,
+				A30E9A422B053B9B00E4C928 /* View+UIFont.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
