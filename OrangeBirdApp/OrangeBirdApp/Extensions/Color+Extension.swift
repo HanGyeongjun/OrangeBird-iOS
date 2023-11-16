@@ -34,7 +34,7 @@ extension Color {
     static let gray8 = Color("Gray800")
     
     //MARK: - Status
-    static let sucess = Color("Green")
-    static let warning = Color("Yellow")
-    static let error = Color("Red")
+    static let sucess = Color("orangeBirdGreen")
+    static let warning = Color("orangeBirdYellow")
+    static let error = Color("orangeBirdRed")
 }
