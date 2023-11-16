@@ -11,7 +11,7 @@ extension Date {
     
     /// Date를 yyyyMMddHHmmss 형태의 String으로 변환해주는 함수입니다.
     /// 다른 형식의 Date가 필요하다면 속성을 추가하면 됩니다.
-    func getDate() -> String {
+    func getCurrentDate() -> String {
         let current = Date()
         let formatter = DateFormatter()
         formatter.locale = Locale(identifier: "ko_kr")
