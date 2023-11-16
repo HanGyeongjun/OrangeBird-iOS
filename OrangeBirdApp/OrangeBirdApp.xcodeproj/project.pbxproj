@@ -22,6 +22,11 @@
 		A3DC9B122B03D17000C23835 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = A3DC9B112B03D17000C23835 /* FirebaseMessaging */; };
 		A3DC9B142B03D17000C23835 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = A3DC9B132B03D17000C23835 /* FirebaseStorage */; };
 		A3DC9B162B03D25100C23835 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DC9B152B03D25100C23835 /* AppDelegate.swift */; };
+		A3DC9B182B04F3B000C23835 /* UIScreen+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DC9B172B04F3B000C23835 /* UIScreen+Extension.swift */; };
+		A3DC9B1A2B04F4CB00C23835 /* Date+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DC9B192B04F4CB00C23835 /* Date+String.swift */; };
+		A3DC9B1C2B04F5F100C23835 /* String+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DC9B1B2B04F5F100C23835 /* String+Formatter.swift */; };
+		A3DC9B1E2B04F6A600C23835 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DC9B1D2B04F6A600C23835 /* HapticManager.swift */; };
+		A3DC9B262B04FD3700C23835 /* StickyHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DC9B252B04FD3700C23835 /* StickyHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +40,11 @@
 		A3B071E52B039C1100451899 /* OrangeBirdAppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrangeBirdAppViewModel.swift; sourceTree = "<group>"; };
 		A3DC9B042B03CF3B00C23835 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A3DC9B152B03D25100C23835 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A3DC9B172B04F3B000C23835 /* UIScreen+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extension.swift"; sourceTree = "<group>"; };
+		A3DC9B192B04F4CB00C23835 /* Date+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+String.swift"; sourceTree = "<group>"; };
+		A3DC9B1B2B04F5F100C23835 /* String+Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Formatter.swift"; sourceTree = "<group>"; };
+		A3DC9B1D2B04F6A600C23835 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
+		A3DC9B252B04FD3700C23835 /* StickyHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +106,9 @@
 		A3B071DD2B039A4500451899 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				A3DC9B192B04F4CB00C23835 /* Date+String.swift */,
+				A3DC9B1B2B04F5F100C23835 /* String+Formatter.swift */,
+				A3DC9B172B04F3B000C23835 /* UIScreen+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -130,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				A3DC9B152B03D25100C23835 /* AppDelegate.swift */,
+				A3DC9B1D2B04F6A600C23835 /* HapticManager.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -138,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				A3B071E32B039BDC00451899 /* CallToActionButton.swift */,
+				A3DC9B252B04FD3700C23835 /* StickyHeader.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -224,12 +239,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3DC9B262B04FD3700C23835 /* StickyHeader.swift in Sources */,
 				A3DC9B162B03D25100C23835 /* AppDelegate.swift in Sources */,
+				A3DC9B1C2B04F5F100C23835 /* String+Formatter.swift in Sources */,
 				A3B071E42B039BDC00451899 /* CallToActionButton.swift in Sources */,
 				A3B071D02B0269B900451899 /* ContentView.swift in Sources */,
+				A3DC9B1A2B04F4CB00C23835 /* Date+String.swift in Sources */,
 				A3B071E62B039C1100451899 /* OrangeBirdAppViewModel.swift in Sources */,
+				A3DC9B1E2B04F6A600C23835 /* HapticManager.swift in Sources */,
 				A3B071D22B0269B900451899 /* Item.swift in Sources */,
 				A3B071CE2B0269B900451899 /* OrangeBirdAppApp.swift in Sources */,
+				A3DC9B182B04F3B000C23835 /* UIScreen+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
