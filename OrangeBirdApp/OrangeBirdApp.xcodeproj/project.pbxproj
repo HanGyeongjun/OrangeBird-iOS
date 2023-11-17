@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A30E9A3C2B0535AC00E4C928 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30E9A3B2B0535AC00E4C928 /* Color+Extension.swift */; };
+		A30E9A3E2B0535E900E4C928 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30E9A3D2B0535E900E4C928 /* UIColor+Extension.swift */; };
+		A30E9A402B053B4200E4C928 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30E9A3F2B053B4200E4C928 /* UIFont+Extension.swift */; };
+		A30E9A422B053B9B00E4C928 /* View+UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30E9A412B053B9B00E4C928 /* View+UIFont.swift */; };
 		A3B071CE2B0269B900451899 /* OrangeBirdAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B071CD2B0269B900451899 /* OrangeBirdAppApp.swift */; };
 		A3B071D02B0269B900451899 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B071CF2B0269B900451899 /* ContentView.swift */; };
 		A3B071D22B0269B900451899 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B071D12B0269B900451899 /* Item.swift */; };
@@ -14,7 +18,6 @@
 		A3B071D72B0269BB00451899 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3B071D62B0269BB00451899 /* Preview Assets.xcassets */; };
 		A3B071E42B039BDC00451899 /* CallToActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B071E32B039BDC00451899 /* CallToActionButton.swift */; };
 		A3B071E62B039C1100451899 /* OrangeBirdAppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B071E52B039C1100451899 /* OrangeBirdAppViewModel.swift */; };
-		A3DC9B052B03CF3B00C23835 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3DC9B042B03CF3B00C23835 /* GoogleService-Info.plist */; };
 		A3DC9B082B03D17000C23835 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = A3DC9B072B03D17000C23835 /* FirebaseAnalytics */; };
 		A3DC9B0C2B03D17000C23835 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A3DC9B0B2B03D17000C23835 /* FirebaseAuth */; };
 		A3DC9B0E2B03D17000C23835 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = A3DC9B0D2B03D17000C23835 /* FirebaseFirestore */; };
@@ -22,14 +25,19 @@
 		A3DC9B122B03D17000C23835 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = A3DC9B112B03D17000C23835 /* FirebaseMessaging */; };
 		A3DC9B142B03D17000C23835 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = A3DC9B132B03D17000C23835 /* FirebaseStorage */; };
 		A3DC9B162B03D25100C23835 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DC9B152B03D25100C23835 /* AppDelegate.swift */; };
-		A3DC9B182B04F3B000C23835 /* UIScreen+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DC9B172B04F3B000C23835 /* UIScreen+Extension.swift */; };
-		A3DC9B1A2B04F4CB00C23835 /* Date+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DC9B192B04F4CB00C23835 /* Date+String.swift */; };
-		A3DC9B1C2B04F5F100C23835 /* String+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DC9B1B2B04F5F100C23835 /* String+Formatter.swift */; };
 		A3DC9B1E2B04F6A600C23835 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DC9B1D2B04F6A600C23835 /* HapticManager.swift */; };
 		A3DC9B262B04FD3700C23835 /* StickyHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DC9B252B04FD3700C23835 /* StickyHeader.swift */; };
+		CEDBDB042B0785470069DE1A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEDBDB032B0785470069DE1A /* GoogleService-Info.plist */; };
+		CEDBDB082B0786EF0069DE1A /* String+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDBDB052B0786EF0069DE1A /* String+Formatter.swift */; };
+		CEDBDB092B0786EF0069DE1A /* Date+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDBDB062B0786EF0069DE1A /* Date+String.swift */; };
+		CEDBDB0A2B0786EF0069DE1A /* UIScreen+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDBDB072B0786EF0069DE1A /* UIScreen+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A30E9A3B2B0535AC00E4C928 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		A30E9A3D2B0535E900E4C928 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		A30E9A3F2B053B4200E4C928 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		A30E9A412B053B9B00E4C928 /* View+UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+UIFont.swift"; sourceTree = "<group>"; };
 		A3B071CA2B0269B900451899 /* OrangeBirdApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrangeBirdApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3B071CD2B0269B900451899 /* OrangeBirdAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrangeBirdAppApp.swift; sourceTree = "<group>"; };
 		A3B071CF2B0269B900451899 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,13 +46,13 @@
 		A3B071D62B0269BB00451899 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A3B071E32B039BDC00451899 /* CallToActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallToActionButton.swift; sourceTree = "<group>"; };
 		A3B071E52B039C1100451899 /* OrangeBirdAppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrangeBirdAppViewModel.swift; sourceTree = "<group>"; };
-		A3DC9B042B03CF3B00C23835 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A3DC9B152B03D25100C23835 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A3DC9B172B04F3B000C23835 /* UIScreen+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extension.swift"; sourceTree = "<group>"; };
-		A3DC9B192B04F4CB00C23835 /* Date+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+String.swift"; sourceTree = "<group>"; };
-		A3DC9B1B2B04F5F100C23835 /* String+Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Formatter.swift"; sourceTree = "<group>"; };
 		A3DC9B1D2B04F6A600C23835 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
 		A3DC9B252B04FD3700C23835 /* StickyHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyHeader.swift; sourceTree = "<group>"; };
+		CEDBDB032B0785470069DE1A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CEDBDB052B0786EF0069DE1A /* String+Formatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Formatter.swift"; sourceTree = "<group>"; };
+		CEDBDB062B0786EF0069DE1A /* Date+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+String.swift"; sourceTree = "<group>"; };
+		CEDBDB072B0786EF0069DE1A /* UIScreen+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,12 +72,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A30E9A3A2B05357600E4C928 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A30E9A3B2B0535AC00E4C928 /* Color+Extension.swift */,
+				A30E9A3D2B0535E900E4C928 /* UIColor+Extension.swift */,
+				A30E9A3F2B053B4200E4C928 /* UIFont+Extension.swift */,
+				A30E9A412B053B9B00E4C928 /* View+UIFont.swift */,
+				CEDBDB062B0786EF0069DE1A /* Date+String.swift */,
+				CEDBDB052B0786EF0069DE1A /* String+Formatter.swift */,
+				CEDBDB072B0786EF0069DE1A /* UIScreen+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		A3B071C12B0269B900451899 = {
 			isa = PBXGroup;
 			children = (
-				A3DC9B042B03CF3B00C23835 /* GoogleService-Info.plist */,
+				CEDBDB032B0785470069DE1A /* GoogleService-Info.plist */,
 				A3B071CC2B0269B900451899 /* OrangeBirdApp */,
 				A3B071CB2B0269B900451899 /* Products */,
+				CEDBDB022B0785300069DE1A /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,7 +107,7 @@
 		A3B071CC2B0269B900451899 /* OrangeBirdApp */ = {
 			isa = PBXGroup;
 			children = (
-				A3B071DD2B039A4500451899 /* Extensions */,
+				A30E9A3A2B05357600E4C928 /* Extensions */,
 				A3B071E12B039A9900451899 /* Support */,
 				A3B071DE2B039A5B00451899 /* Views */,
 				A3B071DF2B039A7200451899 /* Models */,
@@ -101,16 +124,6 @@
 				A3B071D62B0269BB00451899 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		A3B071DD2B039A4500451899 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				A3DC9B192B04F4CB00C23835 /* Date+String.swift */,
-				A3DC9B1B2B04F5F100C23835 /* String+Formatter.swift */,
-				A3DC9B172B04F3B000C23835 /* UIScreen+Extension.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		A3B071DE2B039A5B00451899 /* Views */ = {
@@ -155,6 +168,13 @@
 				A3DC9B252B04FD3700C23835 /* StickyHeader.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		CEDBDB022B0785300069DE1A /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,7 +248,7 @@
 			files = (
 				A3B071D72B0269BB00451899 /* Preview Assets.xcassets in Resources */,
 				A3B071D42B0269BB00451899 /* Assets.xcassets in Resources */,
-				A3DC9B052B03CF3B00C23835 /* GoogleService-Info.plist in Resources */,
+				CEDBDB042B0785470069DE1A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,15 +261,19 @@
 			files = (
 				A3DC9B262B04FD3700C23835 /* StickyHeader.swift in Sources */,
 				A3DC9B162B03D25100C23835 /* AppDelegate.swift in Sources */,
-				A3DC9B1C2B04F5F100C23835 /* String+Formatter.swift in Sources */,
+				A30E9A3C2B0535AC00E4C928 /* Color+Extension.swift in Sources */,
 				A3B071E42B039BDC00451899 /* CallToActionButton.swift in Sources */,
+				CEDBDB0A2B0786EF0069DE1A /* UIScreen+Extension.swift in Sources */,
 				A3B071D02B0269B900451899 /* ContentView.swift in Sources */,
-				A3DC9B1A2B04F4CB00C23835 /* Date+String.swift in Sources */,
+				CEDBDB082B0786EF0069DE1A /* String+Formatter.swift in Sources */,
+				CEDBDB092B0786EF0069DE1A /* Date+String.swift in Sources */,
 				A3B071E62B039C1100451899 /* OrangeBirdAppViewModel.swift in Sources */,
 				A3DC9B1E2B04F6A600C23835 /* HapticManager.swift in Sources */,
 				A3B071D22B0269B900451899 /* Item.swift in Sources */,
+				A30E9A402B053B4200E4C928 /* UIFont+Extension.swift in Sources */,
 				A3B071CE2B0269B900451899 /* OrangeBirdAppApp.swift in Sources */,
-				A3DC9B182B04F3B000C23835 /* UIScreen+Extension.swift in Sources */,
+				A30E9A3E2B0535E900E4C928 /* UIColor+Extension.swift in Sources */,
+				A30E9A422B053B9B00E4C928 /* View+UIFont.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
