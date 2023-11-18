@@ -9,35 +9,42 @@ import SwiftUI
 
 struct usearthHomeView: View {
     var body: some View {
-        ZStack(alignment: .bottomTrailing) {
-            ScrollView {
-                VStack(alignment: .leading, spacing: 24) {
-                    profileSection(profileImage: nil, userName: "유저이름", designation: "플로깅안하는 환경파괴자")
-                    
-                    levelSection(level: 3, levelDescription: "일해라 휴먼 일해라 휴먼 일해라 휴먼 일해라 휴먼")
-                    
-                    pieChartSection(mostDidCategory: "플로깅")
-                    
-                    recentActiviesSection()
+        NavigationView {
+            ZStack(alignment: .bottomTrailing) {
+                ScrollView {
+                    VStack(alignment: .leading, spacing: 24) {
+                        profileSection(profileImage: nil, userName: "유저이름", designation: "플로깅안하는 환경파괴자")
+                        
+                        levelSection(level: 3, levelDescription: "일해라 휴먼 일해라 휴먼 일해라 휴먼 일해라 휴먼")
+                        
+                        pieChartSection(mostDidCategory: "플로깅")
+                        
+                        recentActiviesSection()
+                    }
+                    .padding(.top, 32)
+                    .padding(.bottom, 44)
                 }
-            }
-            Button {
-                //활동 추가 버튼 로직 구현
-            } label: {
-                ZStack(alignment: .center) {
-                    Circle()
-                        .frame(width: 72, height: 72)
-                        .foregroundStyle(Color.usEarthPrimary)
-                    Image(systemName: "plus")
-                        .resizable()
-                        .fontWeight(.bold)
-                        .frame(width: 32, height: 32)
-                        .foregroundStyle(Color.alwaysWhite)
+                Button {
+                    //활동 추가 버튼 로직 구현
+                } label: {
+                    ZStack(alignment: .center) {
+                        Circle()
+                            .frame(width: 72, height: 72)
+                            .foregroundStyle(Color.usEarthPrimary)
+                        Image(systemName: "plus")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .fontWeight(.bold)
+                            .frame(width: 32, height: 32)
+                            .foregroundStyle(Color.alwaysWhite)
+                    }
                 }
+                .padding(.all, 16)
             }
-            .padding(.all, 16)
+            .background(Color.orangeBirdBackground)
+            .navigationTitle("us,earth🌲")
+            .navigationBarTitleDisplayMode(.large)
         }
-        .background(Color.orangeBirdBackground)
     }
     
     @ViewBuilder
@@ -45,6 +52,7 @@ struct usearthHomeView: View {
         HStack(spacing: 16) {
             Image(systemName: "person.crop.circle.fill")
                 .resizable()
+                .aspectRatio(contentMode: .fit)
                 .frame(width: 56, height: 56)
                 .foregroundStyle(Color.gray4)
             VStack(alignment: .leading, spacing: 4) {
@@ -139,7 +147,7 @@ struct usearthHomeView: View {
     @ViewBuilder
     private func recentActiviesSection() -> some View {
         
-        var columns: [GridItem] = Array(repeating: .init(.flexible()), count: 2)
+        let columns: [GridItem] = Array(repeating: .init(.flexible()), count: 2)
         
         VStack(spacing: 16) {
             HStack(alignment: .center, spacing: 0) {
@@ -156,14 +164,9 @@ struct usearthHomeView: View {
                 }
             }
             LazyVGrid(columns: columns, alignment: .listRowSeparatorLeading, spacing: 8) {
-                Rectangle()
-                    .frame(minHeight: 100)
-                Rectangle()
-                    .frame(minHeight: 100)
-                Rectangle()
-                    .frame(minHeight: 100)
-                Rectangle()
-                    .frame(minHeight: 100)
+                ForEach (0..<4) {_ in
+                    ActivityCell()
+                }
             }
         }
         .padding(.horizontal, 16)
