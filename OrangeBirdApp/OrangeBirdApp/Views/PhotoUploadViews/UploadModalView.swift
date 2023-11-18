@@ -24,7 +24,10 @@ struct UploadModalView: View {
                 }
                 .padding(.vertical, 24)
             }
+            Spacer()
             setCategoryView()
+            Spacer()
+
         }
         .padding(.horizontal, 16)
         .background(Color.orangeBirdBackground)
@@ -35,53 +38,10 @@ struct UploadModalView: View {
     private func setCategoryView() -> some View {
         let columns: [GridItem] = Array(repeating: .init(.flexible()), count: 2)
         
+        
         LazyVGrid(columns: columns, alignment: .listRowSeparatorLeading, spacing: 8) {
-            Button(action: {
-                SetImageView(activityType: ActivityType.plogging)
-            }) {
-                RoundedRectangle(cornerRadius: 12)
-                    .frame(width: 200, height: 300)
-                    .foregroundStyle(ActivityType.ecoStuff.color())
-            }
-            Button(action: {
-                
-            }) {
-                RoundedRectangle(cornerRadius: 12)
-                    .frame(width: 200, height: 300)
-                    .foregroundStyle(ActivityType.diy.color())
-            }
-            Button(action: {
-                
-            }) {
-                RoundedRectangle(cornerRadius: 12)
-                    .frame(width: 200, height: 300)
-                    .foregroundStyle(ActivityType.recycle.color())
-            }
-            Button(action: {
-                
-            }) {
-                ZStack(alignment: .top) {
-                    RoundedRectangle(cornerRadius: 12)
-                        .frame(width: 200, height: 300)
-                        .foregroundStyle(ActivityType.plogging.color())
-                    VStack {
-                        
-                        HStack {
-                            Text(ActivityType.plogging.koreanTitle())
-                                .foregroundStyle(.white)
-                            Spacer()
-                            ActivityType.plogging.icon().resizable().frame(width:24, height: 24)
-                        }
-                        .padding()
-                        Spacer()
-                        HStack(alignment: .firstTextBaseline) {
-                            Text(ActivityType.plogging.description())
-                                .foregroundStyle(.white)
-                        }
-                        .padding()
-                    }
-                    .padding()
-                }
+            ForEach(ActivityType.allCases, id: \.self)  {activityType in
+                CategoryCell(activityType: activityType)
             }
         }
     }

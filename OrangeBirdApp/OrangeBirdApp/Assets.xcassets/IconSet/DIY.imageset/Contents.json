@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "DIY.png",
+      "filename" : "DIY 1.svg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "DIY 1.png",
+      "filename" : "DIY.svg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "DIY 2.png",
+      "filename" : "DIY 2.svg",
       "idiom" : "universal",
       "scale" : "3x"
     }

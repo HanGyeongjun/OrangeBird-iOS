@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Recicle.png",
+      "filename" : "Recicle.svg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Recicle 1.png",
+      "filename" : "Recicle 1.svg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Recicle 2.png",
+      "filename" : "Recicle 2.svg",
       "idiom" : "universal",
       "scale" : "3x"
     }
