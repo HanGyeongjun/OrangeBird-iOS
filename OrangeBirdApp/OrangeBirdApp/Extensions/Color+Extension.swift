@@ -15,6 +15,8 @@ extension Color {
 
 extension Color {
     //MARK: - Semantic Colors
+    static let alwaysBlack = Color(light: .gray8, dark: .gray1)
+    static let alwaysWhite = Color(light: .gray1, dark: .gray8)
 }
 
 extension Color {

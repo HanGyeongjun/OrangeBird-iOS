@@ -12,6 +12,9 @@
 		A30E9A402B053B4200E4C928 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30E9A3F2B053B4200E4C928 /* UIFont+Extension.swift */; };
 		A30E9A422B053B9B00E4C928 /* View+UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30E9A412B053B9B00E4C928 /* View+UIFont.swift */; };
 		A31D3D6F2B0853C500531099 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31D3D6E2B0853C500531099 /* SettingView.swift */; };
+		A31D3D722B08D6E200531099 /* usearthHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31D3D712B08D6E200531099 /* usearthHomeView.swift */; };
+		A31D3D742B08EC7500531099 /* ActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31D3D732B08EC7500531099 /* ActivityCell.swift */; };
+		A31D3D762B09156F00531099 /* ActivitiyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31D3D752B09156F00531099 /* ActivitiyListView.swift */; };
 		A3B071CE2B0269B900451899 /* OrangeBirdAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B071CD2B0269B900451899 /* OrangeBirdAppApp.swift */; };
 		A3B071D02B0269B900451899 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B071CF2B0269B900451899 /* ContentView.swift */; };
 		A3B071D22B0269B900451899 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B071D12B0269B900451899 /* Item.swift */; };
@@ -44,6 +47,9 @@
 		A30E9A3F2B053B4200E4C928 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 		A30E9A412B053B9B00E4C928 /* View+UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+UIFont.swift"; sourceTree = "<group>"; };
 		A31D3D6E2B0853C500531099 /* SettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		A31D3D712B08D6E200531099 /* usearthHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = usearthHomeView.swift; sourceTree = "<group>"; };
+		A31D3D732B08EC7500531099 /* ActivityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCell.swift; sourceTree = "<group>"; };
+		A31D3D752B09156F00531099 /* ActivitiyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiyListView.swift; sourceTree = "<group>"; };
 		A3B071CA2B0269B900451899 /* OrangeBirdApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrangeBirdApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3B071CD2B0269B900451899 /* OrangeBirdAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrangeBirdAppApp.swift; sourceTree = "<group>"; };
 		A3B071CF2B0269B900451899 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -143,6 +149,8 @@
 				A3B071E22B039AAE00451899 /* Components */,
 				A3B071CD2B0269B900451899 /* OrangeBirdAppApp.swift */,
 				A3B071CF2B0269B900451899 /* ContentView.swift */,
+				A31D3D712B08D6E200531099 /* usearthHomeView.swift */,
+				A31D3D752B09156F00531099 /* ActivitiyListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -181,6 +189,7 @@
 			children = (
 				A3B071E32B039BDC00451899 /* CallToActionButton.swift */,
 				A3DC9B252B04FD3700C23835 /* StickyHeader.swift */,
+				A31D3D732B08EC7500531099 /* ActivityCell.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -279,10 +288,13 @@
 				A3DC9B162B03D25100C23835 /* AppDelegate.swift in Sources */,
 				A30E9A3C2B0535AC00E4C928 /* Color+Extension.swift in Sources */,
 				A3B071E42B039BDC00451899 /* CallToActionButton.swift in Sources */,
+				A31D3D742B08EC7500531099 /* ActivityCell.swift in Sources */,
 				CEDBDB0A2B0786EF0069DE1A /* UIScreen+Extension.swift in Sources */,
+				A31D3D722B08D6E200531099 /* usearthHomeView.swift in Sources */,
 				A31D3D6F2B0853C500531099 /* SettingView.swift in Sources */,
 				A3B071D02B0269B900451899 /* ContentView.swift in Sources */,
 				CE2E2BF02B08E31100BD7694 /* User.swift in Sources */,
+				A31D3D762B09156F00531099 /* ActivitiyListView.swift in Sources */,
 				CEDBDB082B0786EF0069DE1A /* String+Formatter.swift in Sources */,
 				CE2E2BEE2B08DE7700BD7694 /* Designation.swift in Sources */,
 				CEDBDB092B0786EF0069DE1A /* Date+String.swift in Sources */,
