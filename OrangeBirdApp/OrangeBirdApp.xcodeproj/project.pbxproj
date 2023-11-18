@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A3025DAA2B0957EE000045FC /* UserInfoInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3025DA92B0957EE000045FC /* UserInfoInputView.swift */; };
 		A30E9A3C2B0535AC00E4C928 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30E9A3B2B0535AC00E4C928 /* Color+Extension.swift */; };
 		A30E9A3E2B0535E900E4C928 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30E9A3D2B0535E900E4C928 /* UIColor+Extension.swift */; };
 		A30E9A402B053B4200E4C928 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30E9A3F2B053B4200E4C928 /* UIFont+Extension.swift */; };
@@ -36,6 +37,7 @@
 		CE2E2BEE2B08DE7700BD7694 /* Designation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E2BED2B08DE7700BD7694 /* Designation.swift */; };
 		CE2E2BF02B08E31100BD7694 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E2BEF2B08E31100BD7694 /* User.swift */; };
 		CE603D082B0923FA00CF93F6 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE603D072B0923FA00CF93F6 /* Level.swift */; };
+		CE603D102B09653400CF93F6 /* RouterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE603D0F2B09653400CF93F6 /* RouterView.swift */; };
 		CEDBDB042B0785470069DE1A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEDBDB032B0785470069DE1A /* GoogleService-Info.plist */; };
 		CEDBDB082B0786EF0069DE1A /* String+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDBDB052B0786EF0069DE1A /* String+Formatter.swift */; };
 		CEDBDB092B0786EF0069DE1A /* Date+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDBDB062B0786EF0069DE1A /* Date+String.swift */; };
@@ -43,6 +45,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A3025DA92B0957EE000045FC /* UserInfoInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoInputView.swift; sourceTree = "<group>"; };
 		A30E9A3B2B0535AC00E4C928 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		A30E9A3D2B0535E900E4C928 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		A30E9A3F2B053B4200E4C928 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
@@ -68,6 +71,7 @@
 		CE2E2BED2B08DE7700BD7694 /* Designation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Designation.swift; sourceTree = "<group>"; };
 		CE2E2BEF2B08E31100BD7694 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CE603D072B0923FA00CF93F6 /* Level.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
+		CE603D0F2B09653400CF93F6 /* RouterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterView.swift; sourceTree = "<group>"; };
 		CEDBDB032B0785470069DE1A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CEDBDB052B0786EF0069DE1A /* String+Formatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Formatter.swift"; sourceTree = "<group>"; };
 		CEDBDB062B0786EF0069DE1A /* Date+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+String.swift"; sourceTree = "<group>"; };
@@ -153,8 +157,10 @@
 				A3B071E22B039AAE00451899 /* Components */,
 				A3B071CD2B0269B900451899 /* OrangeBirdAppApp.swift */,
 				A3B071CF2B0269B900451899 /* ContentView.swift */,
+				CE603D0F2B09653400CF93F6 /* RouterView.swift */,
 				A31D3D712B08D6E200531099 /* usearthHomeView.swift */,
 				A31D3D752B09156F00531099 /* ActivitiyListView.swift */,
+				A3025DA92B0957EE000045FC /* UserInfoInputView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -297,6 +303,7 @@
 				CE603D082B0923FA00CF93F6 /* Level.swift in Sources */,
 				CEDBDB0A2B0786EF0069DE1A /* UIScreen+Extension.swift in Sources */,
 				A31D3D722B08D6E200531099 /* usearthHomeView.swift in Sources */,
+				A3025DAA2B0957EE000045FC /* UserInfoInputView.swift in Sources */,
 				A31D3D6F2B0853C500531099 /* SettingView.swift in Sources */,
 				A3B071D02B0269B900451899 /* ContentView.swift in Sources */,
 				CE2E2BF02B08E31100BD7694 /* User.swift in Sources */,
@@ -308,6 +315,7 @@
 				A3DC9B1E2B04F6A600C23835 /* HapticManager.swift in Sources */,
 				A3B071D22B0269B900451899 /* Item.swift in Sources */,
 				A30E9A402B053B4200E4C928 /* UIFont+Extension.swift in Sources */,
+				CE603D102B09653400CF93F6 /* RouterView.swift in Sources */,
 				A3B071CE2B0269B900451899 /* OrangeBirdAppApp.swift in Sources */,
 				A30E9A3E2B0535E900E4C928 /* UIColor+Extension.swift in Sources */,
 				CE2E2BEC2B08DC9C00BD7694 /* ActivityType.swift in Sources */,

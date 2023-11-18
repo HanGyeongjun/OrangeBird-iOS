@@ -158,7 +158,7 @@ struct usearthHomeView: View {
                             .frame(width: 60, height: 16)
                             .foregroundStyle(Color.usEarthPrimary)
                             .opacity(0.6)
-                        Text(getActivityType(index: maxIndex).koreanTitle())
+                        Text(categoryCount[maxIndex] == 0 ? "" : getActivityType(index: maxIndex).koreanTitle())
                             .orangeBirdTitle1()
                             .foregroundStyle(Color.gray8)
                     }
@@ -243,7 +243,7 @@ struct usearthHomeView: View {
                     ActivityCell(activity: activities[1])
                     ActivityCell(activity: activities[2])
                 }
-                else  {
+                else if activities.count != 0 {
                     ActivityCell(activity: activities[0])
                     ActivityCell(activity: activities[1])
                     ActivityCell(activity: activities[2])
