@@ -17,13 +17,13 @@ enum ActivityType: Int, Codable {
     func color() -> Color {
         switch self {
         case.ecoStuff:
-            return .usearthYellow
+            return Color.usEarthYellow
         case.diy:
-            return .usearthOrange
+            return Color.usEarthOrange
         case.plogging:
-            return .usearthPurple
+            return Color.usEarthPurple
         case.recycle:
-            return .usearthBlue
+            return Color.usEarthBlue
         }
     }
 
