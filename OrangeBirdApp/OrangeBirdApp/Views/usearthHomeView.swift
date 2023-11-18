@@ -6,8 +6,10 @@
 //
 
 import SwiftUI
+import Charts
 
 struct usearthHomeView: View {
+    
     var body: some View {
         NavigationView {
             ZStack(alignment: .bottomTrailing) {
@@ -109,6 +111,14 @@ struct usearthHomeView: View {
     
     @ViewBuilder
     private func pieChartSection(mostDidCategory: String) -> some View {
+        
+        var coffeeSales = [
+            (color: Color.usEarthPrimary , name: "Americano", count: 120),
+            (color: Color.gray5 , name: "Cappuccino", count: 234),
+            (color: Color.gray5 , name: "Espresso", count: 62),
+            (color: Color.gray5 , name: "Latte", count: 625),
+        ]
+
         HStack {
             VStack(alignment: .leading, spacing: 4) {
                 Text("내가 가장 많이 한 활동은")
@@ -131,8 +141,24 @@ struct usearthHomeView: View {
             }
             
             Spacer()
-            Circle()
-                .frame(width: 100)
+            Chart {
+                ForEach(coffeeSales, id: \.name) { coffee in
+                    SectorMark(
+                        angle: .value("Cup", coffee.count),
+                        innerRadius: .ratio(0.6),
+                        angularInset: 0.6
+                    )
+                    .cornerRadius(2)
+                }
+            }
+            .chartForegroundStyleScale([
+                "Americano": Color.usEarthPrimary,
+                "Cappuccino": Color.gray5,
+                "Espresso": Color.gray5,
+                "Latte": Color.gray5
+            ])
+            .chartLegend(.hidden)
+            .frame(width: 100, height: 100)
             
             Image(systemName: "chevron.forward")
                 .orangeBirdTitle2()
