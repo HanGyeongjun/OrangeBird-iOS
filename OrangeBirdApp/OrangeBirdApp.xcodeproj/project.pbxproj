@@ -36,6 +36,7 @@
 		CE2E2BEC2B08DC9C00BD7694 /* ActivityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E2BEB2B08DC9C00BD7694 /* ActivityType.swift */; };
 		CE2E2BEE2B08DE7700BD7694 /* Designation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E2BED2B08DE7700BD7694 /* Designation.swift */; };
 		CE2E2BF02B08E31100BD7694 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E2BEF2B08E31100BD7694 /* User.swift */; };
+		CE603D082B0923FA00CF93F6 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE603D072B0923FA00CF93F6 /* Level.swift */; };
 		CEDBDB042B0785470069DE1A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEDBDB032B0785470069DE1A /* GoogleService-Info.plist */; };
 		CEDBDB082B0786EF0069DE1A /* String+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDBDB052B0786EF0069DE1A /* String+Formatter.swift */; };
 		CEDBDB092B0786EF0069DE1A /* Date+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDBDB062B0786EF0069DE1A /* Date+String.swift */; };
@@ -68,6 +69,7 @@
 		CE2E2BEB2B08DC9C00BD7694 /* ActivityType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityType.swift; sourceTree = "<group>"; };
 		CE2E2BED2B08DE7700BD7694 /* Designation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Designation.swift; sourceTree = "<group>"; };
 		CE2E2BEF2B08E31100BD7694 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CE603D072B0923FA00CF93F6 /* Level.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
 		CEDBDB032B0785470069DE1A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CEDBDB052B0786EF0069DE1A /* String+Formatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Formatter.swift"; sourceTree = "<group>"; };
 		CEDBDB062B0786EF0069DE1A /* Date+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+String.swift"; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				CE2E2BEB2B08DC9C00BD7694 /* ActivityType.swift */,
 				CE2E2BED2B08DE7700BD7694 /* Designation.swift */,
 				CE2E2BEF2B08E31100BD7694 /* User.swift */,
+				CE603D072B0923FA00CF93F6 /* Level.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 				A30E9A3C2B0535AC00E4C928 /* Color+Extension.swift in Sources */,
 				A3B071E42B039BDC00451899 /* CallToActionButton.swift in Sources */,
 				A31D3D742B08EC7500531099 /* ActivityCell.swift in Sources */,
+				CE603D082B0923FA00CF93F6 /* Level.swift in Sources */,
 				CEDBDB0A2B0786EF0069DE1A /* UIScreen+Extension.swift in Sources */,
 				A31D3D722B08D6E200531099 /* usearthHomeView.swift in Sources */,
 				A31D3D6F2B0853C500531099 /* SettingView.swift in Sources */,
