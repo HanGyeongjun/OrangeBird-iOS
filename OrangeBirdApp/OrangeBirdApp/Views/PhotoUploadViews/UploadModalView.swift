@@ -59,6 +59,26 @@ struct SetImageView: View {
     var activityType: String
     
     var body: some View {
-        Text(activityType)
+        VStack(alignment: .center) {
+            Image("exampleImage")
+                .resizable()
+                .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
+                .frame(width: UIScreen.screenWidth - 48)
+            HStack {
+                Button {
+                    //공유 이미지
+                } label: {
+                    Image(systemName: "square.and.arrow.up")
+                        .resizable()
+                        .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
+                        .frame(width: 20, height: 20)
+                        .padding(.all, 32)
+                        .foregroundStyle(Color.usEarthPrimary)
+                        .background(Color.gray4)
+                        .clipShape(Circle())
+                }
+            }
+        }
+
     }
 }
