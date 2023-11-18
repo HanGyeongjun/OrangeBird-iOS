@@ -13,8 +13,11 @@ struct usearthHomeView: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 24) {
                     profileSection(profileImage: nil, userName: "유저이름", designation: "플로깅안하는 환경파괴자")
+                    
                     levelSection(level: 3, levelDescription: "일해라 휴먼 일해라 휴먼 일해라 휴먼 일해라 휴먼")
+                    
                     pieChartSection(mostDidCategory: "플로깅")
+                    
                     recentActiviesSection()
                 }
             }
@@ -29,7 +32,7 @@ struct usearthHomeView: View {
                         .resizable()
                         .fontWeight(.bold)
                         .frame(width: 32, height: 32)
-                        .foregroundStyle(Color.gray1)
+                        .foregroundStyle(Color.alwaysWhite)
                 }
             }
             .padding(.all, 16)
@@ -65,7 +68,7 @@ struct usearthHomeView: View {
         VStack(alignment: .leading, spacing: 16) {
             Text("Lv. \(level)")
                 .orangeBirdTitle2()
-                .foregroundStyle(Color.gray1)
+                .foregroundStyle(Color.alwaysWhite)
                 .padding(.horizontal, 12)
                 .padding(.vertical, 4)
                 .background(Color.usEarthPrimary)
