@@ -11,6 +11,7 @@
 		A30E9A3E2B0535E900E4C928 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30E9A3D2B0535E900E4C928 /* UIColor+Extension.swift */; };
 		A30E9A402B053B4200E4C928 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30E9A3F2B053B4200E4C928 /* UIFont+Extension.swift */; };
 		A30E9A422B053B9B00E4C928 /* View+UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30E9A412B053B9B00E4C928 /* View+UIFont.swift */; };
+		A31D3D6F2B0853C500531099 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31D3D6E2B0853C500531099 /* SettingView.swift */; };
 		A3B071CE2B0269B900451899 /* OrangeBirdAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B071CD2B0269B900451899 /* OrangeBirdAppApp.swift */; };
 		A3B071D02B0269B900451899 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B071CF2B0269B900451899 /* ContentView.swift */; };
 		A3B071D22B0269B900451899 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B071D12B0269B900451899 /* Item.swift */; };
@@ -38,6 +39,7 @@
 		A30E9A3D2B0535E900E4C928 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		A30E9A3F2B053B4200E4C928 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 		A30E9A412B053B9B00E4C928 /* View+UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+UIFont.swift"; sourceTree = "<group>"; };
+		A31D3D6E2B0853C500531099 /* SettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		A3B071CA2B0269B900451899 /* OrangeBirdApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrangeBirdApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3B071CD2B0269B900451899 /* OrangeBirdAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrangeBirdAppApp.swift; sourceTree = "<group>"; };
 		A3B071CF2B0269B900451899 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 		A3B071DE2B039A5B00451899 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A31D3D6E2B0853C500531099 /* SettingView.swift */,
 				A3B071E22B039AAE00451899 /* Components */,
 				A3B071CD2B0269B900451899 /* OrangeBirdAppApp.swift */,
 				A3B071CF2B0269B900451899 /* ContentView.swift */,
@@ -264,6 +267,7 @@
 				A30E9A3C2B0535AC00E4C928 /* Color+Extension.swift in Sources */,
 				A3B071E42B039BDC00451899 /* CallToActionButton.swift in Sources */,
 				CEDBDB0A2B0786EF0069DE1A /* UIScreen+Extension.swift in Sources */,
+				A31D3D6F2B0853C500531099 /* SettingView.swift in Sources */,
 				A3B071D02B0269B900451899 /* ContentView.swift in Sources */,
 				CEDBDB082B0786EF0069DE1A /* String+Formatter.swift in Sources */,
 				CEDBDB092B0786EF0069DE1A /* Date+String.swift in Sources */,
