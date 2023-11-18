@@ -67,3 +67,18 @@ enum ActivityType: Int, Codable {
     }
 }
 
+
+func getActivityType(index: Int) -> ActivityType {
+    switch index {
+    case 0:
+        return .ecoStuff
+    case 1:
+        return .diy
+    case 2:
+        return .recycle
+    case 3:
+        return .plogging
+    default:
+        return .plogging
+    }
+}

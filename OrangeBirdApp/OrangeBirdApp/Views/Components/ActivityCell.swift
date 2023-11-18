@@ -10,6 +10,7 @@ import SwiftUI
 struct ActivityCell: View {
     
     var image: String = "testActivityImage"
+    var activity: Activity
     
     var body: some View {
         ZStack(alignment: .leading) {
@@ -17,24 +18,24 @@ struct ActivityCell: View {
                 .resizable()
                 .frame(width: UIScreen.twoColumnsCellWidth, height: 200)
             VStack(alignment: .leading) {
-                Text("DIY")
+                Text(activity.category.koreanTitle())
                     .orangeBirdHeadline()
                     .foregroundStyle(Color.alwaysBlack)
                     .padding(.horizontal, 6)
                     .padding(.vertical, 4)
-                    .background(Color.usearthBlue)
+                    .background(activity.category.color())
                     .clipShape(Capsule())
                     .padding(.all, 8)
                 
                 Spacer()
                 HStack {
                     VStack(alignment: .leading, spacing: 4) {
-                        Image(systemName: "hammer.fill")
+                        activity.category.icon()
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 40, height: 40)
-                            .foregroundStyle(Color.usEarthBlue)
-                        Text("2023년 12월 18일")
+                            .foregroundStyle(activity.category.color())
+                        Text(activity.date.getDate())
                             .orangeBirdBody2()
                             .foregroundStyle(Color.alwaysBlack)
                             .lineLimit(1)
@@ -52,9 +53,9 @@ struct ActivityCell: View {
     }
 }
 
-#Preview {
-    HStack(spacing: 8) {
-        ActivityCell()
-        ActivityCell()
-    }
-}
+//#Preview {
+//    HStack(spacing: 8) {
+//        ActivityCell()
+//        ActivityCell()
+//    }
+//}

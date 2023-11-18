@@ -6,22 +6,49 @@
 //
 
 import SwiftUI
+import SwiftData
 import Charts
 
 struct usearthHomeView: View {
+    
+    @Environment(\.modelContext) private var modelContext
+    @Query private var user: [User]
+    @Query(sort: \Activity.date, order: .reverse) private var activities: [Activity]
+//    private var user = User(username: "홍길동", designationPrefix: .ecoStuff, desionationSuffix: .niceConsumer)
+
     
     var body: some View {
         NavigationView {
             ZStack(alignment: .bottomTrailing) {
                 ScrollView {
                     VStack(alignment: .leading, spacing: 24) {
-                        profileSection(profileImage: nil, userName: "유저이름", designation: "플로깅안하는 환경파괴자")
-                        
-                        levelSection(level: 3, levelDescription: "일해라 휴먼 일해라 휴먼 일해라 휴먼 일해라 휴먼")
-                        
-                        pieChartSection(mostDidCategory: "플로깅")
-                        
-                        recentActiviesSection()
+                        if user.count != 0{
+                            let userLevel = user[0].getLevel(currentExp: activities.count)
+                            profileSection(profileImage: nil, userName: user[0].username, designation: user[0].desionationSuffix.rawValue)
+                            levelSection(level: userLevel.rawValue, levelDescription: userLevel.description())
+                            
+                            let numbers = user[0].activityNumbers(activities: activities)
+                            pieChartSection(categoryCount: numbers, maxIndex: user[0].mostIndex(sum: numbers))
+                            
+                            recentActiviesSection()
+                        } else {
+                            Button(action: {
+                                modelContext.insert(User(username: "홍길동", designationPrefix: .diy, desionationSuffix: .earthSafer))
+                                modelContext.insert(Activity(category: .diy, memo: "diy했음", currentLevel: 1))
+                                modelContext.insert(Activity(category: .diy, memo: "diy했음2", currentLevel: 1))
+                                modelContext.insert(Activity(category: .diy, memo: "diy했음3", currentLevel: 1))
+                                modelContext.insert(Activity(category: .diy, memo: "diy했음4", currentLevel: 1))
+                                modelContext.insert(Activity(category: .ecoStuff, memo: "ecoStuff햇", currentLevel: 1))
+                                modelContext.insert(Activity(category: .ecoStuff, memo: "ecoStuffgoT", currentLevel: 1))
+                                modelContext.insert(Activity(category: .plogging, memo: "plogging asdf", currentLevel: 1))
+                                modelContext.insert(Activity(category: .recycle, memo: "recycle asdfdii", currentLevel: 1))
+                                modelContext.insert(Activity(category: .plogging, memo: "plogging gogo", currentLevel: 1))
+                                modelContext.insert(Activity(category: .plogging, memo: "plogging gogo", currentLevel: 1))
+                            }, label: {
+                                Text("Button")
+                                
+                            })
+                        }
                     }
                     .padding(.top, 32)
                     .padding(.bottom, 44)
@@ -92,7 +119,9 @@ struct usearthHomeView: View {
                     .foregroundStyle(Color.gray1)
                 
                 RoundedRectangle(cornerRadius: 8)
-                    .frame(width: (progressBarWidth / 2),
+                
+                    .frame(
+                        width: (progressBarWidth/CGFloat(getExp(level: level) - getExp(level: level-1))) * CGFloat((activities.count - getExp(level: level-1))),
                            height: 20)
                     .foregroundStyle(Color.usEarthPrimary)
             }
@@ -110,15 +139,14 @@ struct usearthHomeView: View {
     }
     
     @ViewBuilder
-    private func pieChartSection(mostDidCategory: String) -> some View {
-        
+    private func pieChartSection(categoryCount : [Int], maxIndex: Int) -> some View {
         var coffeeSales = [
-            (color: Color.usEarthPrimary , name: "Americano", count: 120),
-            (color: Color.gray5 , name: "Cappuccino", count: 234),
-            (color: Color.gray5 , name: "Espresso", count: 62),
-            (color: Color.gray5 , name: "Latte", count: 625),
+            (color: maxIndex == 0 ? Color.usEarthPrimary : Color.gray5 , name: "ecoStuff", count: categoryCount[0]),
+            (color: maxIndex == 1 ? Color.usEarthPrimary : Color.gray5 , name: "diy", count: categoryCount[1]),
+            (color: maxIndex == 2 ? Color.usEarthPrimary : Color.gray5 , name: "recycle", count: categoryCount[2]),
+            (color: maxIndex == 3 ? Color.usEarthPrimary : Color.gray5 , name: "plogging", count: categoryCount[3])
         ]
-
+        
         HStack {
             VStack(alignment: .leading, spacing: 4) {
                 Text("내가 가장 많이 한 활동은")
@@ -130,7 +158,7 @@ struct usearthHomeView: View {
                             .frame(width: 60, height: 16)
                             .foregroundStyle(Color.usEarthPrimary)
                             .opacity(0.6)
-                        Text(mostDidCategory)
+                        Text(getActivityType(index: maxIndex).koreanTitle())
                             .orangeBirdTitle1()
                             .foregroundStyle(Color.gray8)
                     }
@@ -152,10 +180,10 @@ struct usearthHomeView: View {
                 }
             }
             .chartForegroundStyleScale([
-                "Americano": Color.usEarthPrimary,
-                "Cappuccino": Color.gray5,
-                "Espresso": Color.gray5,
-                "Latte": Color.gray5
+                coffeeSales[0].name: coffeeSales[0].color,
+                coffeeSales[1].name: coffeeSales[1].color,
+                coffeeSales[2].name: coffeeSales[2].color,
+                coffeeSales[3].name: coffeeSales[3].color,
             ])
             .chartLegend(.hidden)
             .frame(width: 100, height: 100)
@@ -186,17 +214,40 @@ struct usearthHomeView: View {
                         .orangeBirdBody2()
                         .foregroundStyle(Color.gray7)
                 }
-//                Button {
-//                    //더보기 버튼 액션 삽입
-//                } label: {
-//                    Text("더보기")
-//                        .orangeBirdBody2()
-//                        .foregroundStyle(Color.gray7)
-//                }
+                //                Button {
+                //                    //더보기 버튼 액션 삽입
+                //                } label: {
+                //                    Text("더보기")
+                //                        .orangeBirdBody2()
+                //                        .foregroundStyle(Color.gray7)
+                //                }
             }
             LazyVGrid(columns: columns, alignment: .listRowSeparatorLeading, spacing: 8) {
-                ForEach (0..<4) {_ in
-                    ActivityCell()
+//                let max = activities.count > 4 ? 4 : activities.count
+//                ForEach (activities) { index, activity in
+//                    if index < 4 {
+//                        ActivityCell(activity: activity)
+//                    }
+//                }
+                
+//                var acts = activities.reversed()
+                if activities.count == 1 {
+                    ActivityCell(activity: activities[0])
+                }
+                else if activities.count == 2 {
+                    ActivityCell(activity: activities[0])
+                    ActivityCell(activity: activities[1])
+                }
+                else if activities.count == 3 {
+                    ActivityCell(activity: activities[0])
+                    ActivityCell(activity: activities[1])
+                    ActivityCell(activity: activities[2])
+                }
+                else  {
+                    ActivityCell(activity: activities[0])
+                    ActivityCell(activity: activities[1])
+                    ActivityCell(activity: activities[2])
+                    ActivityCell(activity: activities[3])
                 }
             }
         }
