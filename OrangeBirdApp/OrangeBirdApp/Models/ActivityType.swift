@@ -43,13 +43,13 @@ enum ActivityType: Int, Codable {
     func icon() -> Image {
         switch self {
         case.ecoStuff:
-            return Image("ecostuff")
+            return Image("EcoProduct")
         case.diy:
-            return Image("diy")
+            return Image("DIY")
         case.recycle:
-            return Image("recycle")
+            return Image("Recycle")
         case.plogging:
-            return Image("plogging")
+            return Image("Flogging")
         }
     }
     
