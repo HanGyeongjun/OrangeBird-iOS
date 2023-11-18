@@ -10,6 +10,8 @@ import Charts
 
 struct usearthHomeView: View {
     
+    @State var isShowModal = false
+    
     var body: some View {
         NavigationView {
             ZStack(alignment: .bottomTrailing) {
@@ -27,7 +29,7 @@ struct usearthHomeView: View {
                     .padding(.bottom, 44)
                 }
                 Button {
-                    //활동 추가 버튼 로직 구현
+                    isShowModal.toggle()
                 } label: {
                     ZStack(alignment: .center) {
                         Circle()
@@ -47,6 +49,10 @@ struct usearthHomeView: View {
             .navigationTitle("us,earth🌲")
             .navigationBarTitleDisplayMode(.large)
         }
+        .sheet(isPresented: self.$isShowModal) {
+            UploadModalView(isShowModal: self.$isShowModal)
+        }
+        
     }
     
     @ViewBuilder
