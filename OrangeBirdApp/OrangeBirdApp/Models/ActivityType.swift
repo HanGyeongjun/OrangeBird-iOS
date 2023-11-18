@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-enum ActivityType: Int, Codable {
+enum ActivityType: Int, Codable, CaseIterable {
     case ecoStuff = 0
     case diy
     case recycle

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A3025DA82B094C54000045FC /* UploadModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3025DA72B094C54000045FC /* UploadModalView.swift */; };
+		A3025DAC2B096184000045FC /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3025DAB2B096184000045FC /* CategoryCell.swift */; };
 		A3025DAA2B0957EE000045FC /* UserInfoInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3025DA92B0957EE000045FC /* UserInfoInputView.swift */; };
 		A30E9A3C2B0535AC00E4C928 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30E9A3B2B0535AC00E4C928 /* Color+Extension.swift */; };
 		A30E9A3E2B0535E900E4C928 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30E9A3D2B0535E900E4C928 /* UIColor+Extension.swift */; };
@@ -45,6 +47,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A3025DA72B094C54000045FC /* UploadModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadModalView.swift; sourceTree = "<group>"; };
+		A3025DAB2B096184000045FC /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		A3025DA92B0957EE000045FC /* UserInfoInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoInputView.swift; sourceTree = "<group>"; };
 		A30E9A3B2B0535AC00E4C928 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		A30E9A3D2B0535E900E4C928 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
@@ -95,6 +99,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A3025DA62B094C38000045FC /* PhotoUploadViews */ = {
+			isa = PBXGroup;
+			children = (
+				A3025DA72B094C54000045FC /* UploadModalView.swift */,
+				A3025DAB2B096184000045FC /* CategoryCell.swift */,
+			);
+			path = PhotoUploadViews;
+			sourceTree = "<group>";
+		};
 		A30E9A3A2B05357600E4C928 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +173,7 @@
 				CE603D0F2B09653400CF93F6 /* RouterView.swift */,
 				A31D3D712B08D6E200531099 /* usearthHomeView.swift */,
 				A31D3D752B09156F00531099 /* ActivitiyListView.swift */,
+				A3025DA62B094C38000045FC /* PhotoUploadViews */,
 				A3025DA92B0957EE000045FC /* UserInfoInputView.swift */,
 			);
 			path = Views;
@@ -308,7 +322,9 @@
 				A3B071D02B0269B900451899 /* ContentView.swift in Sources */,
 				CE2E2BF02B08E31100BD7694 /* User.swift in Sources */,
 				A31D3D762B09156F00531099 /* ActivitiyListView.swift in Sources */,
+				A3025DAC2B096184000045FC /* CategoryCell.swift in Sources */,
 				CEDBDB082B0786EF0069DE1A /* String+Formatter.swift in Sources */,
+				A3025DA82B094C54000045FC /* UploadModalView.swift in Sources */,
 				CE2E2BEE2B08DE7700BD7694 /* Designation.swift in Sources */,
 				CEDBDB092B0786EF0069DE1A /* Date+String.swift in Sources */,
 				A3B071E62B039C1100451899 /* OrangeBirdAppViewModel.swift in Sources */,

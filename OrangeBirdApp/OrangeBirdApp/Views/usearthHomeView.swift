@@ -16,6 +16,7 @@ struct usearthHomeView: View {
     @Query(sort: \Activity.date, order: .reverse) private var activities: [Activity]
 //    private var user = User(username: "홍길동", designationPrefix: .ecoStuff, desionationSuffix: .niceConsumer)
 
+    @State var isShowModal = false
     
     var body: some View {
         NavigationView {
@@ -54,7 +55,7 @@ struct usearthHomeView: View {
                     .padding(.bottom, 44)
                 }
                 Button {
-                    //활동 추가 버튼 로직 구현
+                    isShowModal.toggle()
                 } label: {
                     ZStack(alignment: .center) {
                         Circle()
@@ -74,6 +75,10 @@ struct usearthHomeView: View {
             .navigationTitle("us,earth🌲")
             .navigationBarTitleDisplayMode(.large)
         }
+        .sheet(isPresented: self.$isShowModal) {
+            UploadModalView(isShowModal: self.$isShowModal)
+        }
+        
     }
     
     @ViewBuilder
