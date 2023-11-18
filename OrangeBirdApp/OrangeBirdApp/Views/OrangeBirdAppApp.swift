@@ -32,7 +32,7 @@ struct OrangeBirdAppApp: App {
     
     var body: some Scene {
         WindowGroup {
-            usearthHomeView()
+            UserInfoInputView()
         }
         .modelContainer(sharedModelContainer)
     }
