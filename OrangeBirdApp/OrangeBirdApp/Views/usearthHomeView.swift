@@ -181,13 +181,18 @@ struct usearthHomeView: View {
                     .orangeBirdTitle1()
                     .foregroundStyle(Color.gray8)
                 Spacer()
-                Button {
-                    //더보기 버튼 액션 삽입
-                } label: {
+                NavigationLink(destination: ActivitiyListView()) {
                     Text("더보기")
                         .orangeBirdBody2()
                         .foregroundStyle(Color.gray7)
                 }
+//                Button {
+//                    //더보기 버튼 액션 삽입
+//                } label: {
+//                    Text("더보기")
+//                        .orangeBirdBody2()
+//                        .foregroundStyle(Color.gray7)
+//                }
             }
             LazyVGrid(columns: columns, alignment: .listRowSeparatorLeading, spacing: 8) {
                 ForEach (0..<4) {_ in

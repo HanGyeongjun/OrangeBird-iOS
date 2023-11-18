@@ -14,6 +14,7 @@
 		A31D3D6F2B0853C500531099 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31D3D6E2B0853C500531099 /* SettingView.swift */; };
 		A31D3D722B08D6E200531099 /* usearthHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31D3D712B08D6E200531099 /* usearthHomeView.swift */; };
 		A31D3D742B08EC7500531099 /* ActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31D3D732B08EC7500531099 /* ActivityCell.swift */; };
+		A31D3D762B09156F00531099 /* ActivitiyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31D3D752B09156F00531099 /* ActivitiyListView.swift */; };
 		A3B071CE2B0269B900451899 /* OrangeBirdAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B071CD2B0269B900451899 /* OrangeBirdAppApp.swift */; };
 		A3B071D02B0269B900451899 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B071CF2B0269B900451899 /* ContentView.swift */; };
 		A3B071D22B0269B900451899 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B071D12B0269B900451899 /* Item.swift */; };
@@ -44,6 +45,7 @@
 		A31D3D6E2B0853C500531099 /* SettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		A31D3D712B08D6E200531099 /* usearthHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = usearthHomeView.swift; sourceTree = "<group>"; };
 		A31D3D732B08EC7500531099 /* ActivityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCell.swift; sourceTree = "<group>"; };
+		A31D3D752B09156F00531099 /* ActivitiyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiyListView.swift; sourceTree = "<group>"; };
 		A3B071CA2B0269B900451899 /* OrangeBirdApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrangeBirdApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3B071CD2B0269B900451899 /* OrangeBirdAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrangeBirdAppApp.swift; sourceTree = "<group>"; };
 		A3B071CF2B0269B900451899 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				A3B071CD2B0269B900451899 /* OrangeBirdAppApp.swift */,
 				A3B071CF2B0269B900451899 /* ContentView.swift */,
 				A31D3D712B08D6E200531099 /* usearthHomeView.swift */,
+				A31D3D752B09156F00531099 /* ActivitiyListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				A31D3D722B08D6E200531099 /* usearthHomeView.swift in Sources */,
 				A31D3D6F2B0853C500531099 /* SettingView.swift in Sources */,
 				A3B071D02B0269B900451899 /* ContentView.swift in Sources */,
+				A31D3D762B09156F00531099 /* ActivitiyListView.swift in Sources */,
 				CEDBDB082B0786EF0069DE1A /* String+Formatter.swift in Sources */,
 				CEDBDB092B0786EF0069DE1A /* Date+String.swift in Sources */,
 				A3B071E62B039C1100451899 /* OrangeBirdAppViewModel.swift in Sources */,
