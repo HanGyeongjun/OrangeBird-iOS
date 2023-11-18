@@ -21,3 +21,23 @@ class User: Identifiable {
         self.desionationSuffix = desionationSuffix
     }
 }
+
+extension User {
+    func activityNumbers(activities: [Activity]) -> [Int] {
+        var sum = [0, 0, 0, 0]
+        activities.forEach{
+            sum[$0.category.rawValue] += 1
+        }
+        return sum
+    }
+    func mostIndex(sum: [Int]) -> Int {
+        var maxIndex = 0;
+        
+        for i in 0..<4 {
+            if sum[maxIndex] < sum[i] {
+                maxIndex = i
+            }
+        }
+        return maxIndex
+    }
+}

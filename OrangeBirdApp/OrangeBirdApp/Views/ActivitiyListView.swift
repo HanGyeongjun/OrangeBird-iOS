@@ -6,16 +6,20 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct ActivitiyListView: View {
+    @Environment(\.modelContext) private var modelContext
+//    @Query private var activities: [Activity]
+    @Query(sort: \Activity.date, order: .reverse) private var activities: [Activity]
     
     let columns: [GridItem] = Array(repeating: .init(.flexible()), count: 2)
     
     var body: some View {
         ScrollView{
             LazyVGrid(columns: columns, alignment: .listRowSeparatorLeading, spacing: 8) {
-                ForEach (0..<12) {_ in
-                    ActivityCell()
+                ForEach(activities) { activity in
+                    ActivityCell(activity: activity)
                 }
             }
             .padding(.top, 16)
