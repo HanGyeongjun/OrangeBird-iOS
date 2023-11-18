@@ -28,6 +28,10 @@
 		A3DC9B162B03D25100C23835 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DC9B152B03D25100C23835 /* AppDelegate.swift */; };
 		A3DC9B1E2B04F6A600C23835 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DC9B1D2B04F6A600C23835 /* HapticManager.swift */; };
 		A3DC9B262B04FD3700C23835 /* StickyHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DC9B252B04FD3700C23835 /* StickyHeader.swift */; };
+		CE2E2BEA2B08DC8600BD7694 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E2BE92B08DC8600BD7694 /* Activity.swift */; };
+		CE2E2BEC2B08DC9C00BD7694 /* ActivityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E2BEB2B08DC9C00BD7694 /* ActivityType.swift */; };
+		CE2E2BEE2B08DE7700BD7694 /* Designation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E2BED2B08DE7700BD7694 /* Designation.swift */; };
+		CE2E2BF02B08E31100BD7694 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E2BEF2B08E31100BD7694 /* User.swift */; };
 		CEDBDB042B0785470069DE1A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEDBDB032B0785470069DE1A /* GoogleService-Info.plist */; };
 		CEDBDB082B0786EF0069DE1A /* String+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDBDB052B0786EF0069DE1A /* String+Formatter.swift */; };
 		CEDBDB092B0786EF0069DE1A /* Date+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDBDB062B0786EF0069DE1A /* Date+String.swift */; };
@@ -51,6 +55,10 @@
 		A3DC9B152B03D25100C23835 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3DC9B1D2B04F6A600C23835 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
 		A3DC9B252B04FD3700C23835 /* StickyHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyHeader.swift; sourceTree = "<group>"; };
+		CE2E2BE92B08DC8600BD7694 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		CE2E2BEB2B08DC9C00BD7694 /* ActivityType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityType.swift; sourceTree = "<group>"; };
+		CE2E2BED2B08DE7700BD7694 /* Designation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Designation.swift; sourceTree = "<group>"; };
+		CE2E2BEF2B08E31100BD7694 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CEDBDB032B0785470069DE1A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CEDBDB052B0786EF0069DE1A /* String+Formatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Formatter.swift"; sourceTree = "<group>"; };
 		CEDBDB062B0786EF0069DE1A /* Date+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+String.swift"; sourceTree = "<group>"; };
@@ -143,6 +151,10 @@
 			isa = PBXGroup;
 			children = (
 				A3B071D12B0269B900451899 /* Item.swift */,
+				CE2E2BE92B08DC8600BD7694 /* Activity.swift */,
+				CE2E2BEB2B08DC9C00BD7694 /* ActivityType.swift */,
+				CE2E2BED2B08DE7700BD7694 /* Designation.swift */,
+				CE2E2BEF2B08E31100BD7694 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -262,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE2E2BEA2B08DC8600BD7694 /* Activity.swift in Sources */,
 				A3DC9B262B04FD3700C23835 /* StickyHeader.swift in Sources */,
 				A3DC9B162B03D25100C23835 /* AppDelegate.swift in Sources */,
 				A30E9A3C2B0535AC00E4C928 /* Color+Extension.swift in Sources */,
@@ -269,7 +282,9 @@
 				CEDBDB0A2B0786EF0069DE1A /* UIScreen+Extension.swift in Sources */,
 				A31D3D6F2B0853C500531099 /* SettingView.swift in Sources */,
 				A3B071D02B0269B900451899 /* ContentView.swift in Sources */,
+				CE2E2BF02B08E31100BD7694 /* User.swift in Sources */,
 				CEDBDB082B0786EF0069DE1A /* String+Formatter.swift in Sources */,
+				CE2E2BEE2B08DE7700BD7694 /* Designation.swift in Sources */,
 				CEDBDB092B0786EF0069DE1A /* Date+String.swift in Sources */,
 				A3B071E62B039C1100451899 /* OrangeBirdAppViewModel.swift in Sources */,
 				A3DC9B1E2B04F6A600C23835 /* HapticManager.swift in Sources */,
@@ -277,6 +292,7 @@
 				A30E9A402B053B4200E4C928 /* UIFont+Extension.swift in Sources */,
 				A3B071CE2B0269B900451899 /* OrangeBirdAppApp.swift in Sources */,
 				A30E9A3E2B0535E900E4C928 /* UIColor+Extension.swift in Sources */,
+				CE2E2BEC2B08DC9C00BD7694 /* ActivityType.swift in Sources */,
 				A30E9A422B053B9B00E4C928 /* View+UIFont.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
