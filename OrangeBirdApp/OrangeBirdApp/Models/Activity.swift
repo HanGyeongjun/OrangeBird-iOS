@@ -25,7 +25,6 @@ class Activity: Identifiable {
         self.image = UIImage(named: "default_image")!.pngData()!
     }
     
-    
     func setImage(image: UIImage) {
         self.image = convertImageToData(image: image)
     }

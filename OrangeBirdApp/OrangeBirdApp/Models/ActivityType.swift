@@ -30,13 +30,13 @@ enum ActivityType: Int, Codable {
     func description() -> String {
         switch self {
         case.ecoStuff:
-            return "eco STUFF"
+            return "친환경적인 재료 혹은 친환경 포장재를 사용한 제품을 구매하거나 사용하는 활동이에요."
         case.diy:
-            return "DIY"
+            return "업사이클링 또는 리사이클링을 통하여 기존 제품을 재활용하는 활동이에요."
         case.recycle:
-            return "RECYCLE"
+            return "재활용을 위해 종류별로 쓰레기를 구분하여 버리는 활동이에요."
         case.plogging:
-            return "plogging"
+            return "조깅하며 쓰레기를 수거하는 활동이에요."
         }
     }
     
