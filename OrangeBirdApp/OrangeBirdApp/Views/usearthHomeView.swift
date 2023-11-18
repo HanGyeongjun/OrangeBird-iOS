@@ -243,7 +243,7 @@ struct usearthHomeView: View {
                     ActivityCell(activity: activities[1])
                     ActivityCell(activity: activities[2])
                 }
-                else  {
+                else if activities.count != 0 {
                     ActivityCell(activity: activities[0])
                     ActivityCell(activity: activities[1])
                     ActivityCell(activity: activities[2])

@@ -6,8 +6,13 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct UserInfoInputView: View {
+    @Environment(\.modelContext) private var modelContext
+    @Query private var user: [User]
+    
+    @Binding var isRegister: Bool
     @State private var username = ""
     @State private var isInvalidInput = false
     @State private var isMaxCharacterExceeded = false
@@ -95,7 +100,8 @@ struct UserInfoInputView: View {
                     .padding(.top, 32)
                 
                 Button {
-                    //ACtion
+                    modelContext.insert(User(username: username, designationPrefix: selectedPrefix, desionationSuffix: selectedSuffix))
+                    self.isRegister = true
                 } label: {
                     Text("us,earth 시작하기")
                         .orangeBirdHeadline()
@@ -118,6 +124,6 @@ struct UserInfoInputView: View {
     }
 }
 
-#Preview {
-    UserInfoInputView()
-}
+//#Preview {
+//    UserInfoInputView()
+//}

@@ -30,9 +30,11 @@ struct OrangeBirdAppApp: App {
     //Firebase setup을 위한 app delegate 파일 등록
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     
+    
+
     var body: some Scene {
         WindowGroup {
-            UserInfoInputView()
+            RouterView()
         }
         .modelContainer(sharedModelContainer)
     }
