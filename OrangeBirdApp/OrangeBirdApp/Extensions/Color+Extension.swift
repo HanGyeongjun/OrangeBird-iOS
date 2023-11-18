@@ -20,8 +20,10 @@ extension Color {
 extension Color {
     //MARK: - Primary
     static let orangeBirdBackground = Color("Gray200")
-    static let orangeBirdPrimary = Color("Primary300")
-    static let orangeBirdPrimaryDisabled = Color("Primary200")
+    static let beigeBirdPrimary = Color("beigeBird300")
+    static let beigeBirdDisabled = Color("beigeBird200")
+    static let orangeBirdPrimary = Color("orangeBird300")
+    static let orangeBirdDisabled = Color("orangeBird200")
     
     //MARK: - GrayScale
     static let gray1 = Color("Gray100")
