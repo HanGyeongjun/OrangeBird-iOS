@@ -11,6 +11,7 @@ struct UploadModalView: View {
     
     @Binding var isShowModal: Bool
     @State var setCategory: Category?
+    @State var tappedCategory: String = ""
     
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
@@ -25,7 +26,11 @@ struct UploadModalView: View {
                 .padding(.vertical, 24)
             }
             Spacer()
-            setCategoryView()
+            if (tappedCategory.isEmpty) {
+                setCategoryView()
+            } else {
+                SetImageView(activityType: tappedCategory)
+            }
             Spacer()
 
         }
@@ -42,15 +47,18 @@ struct UploadModalView: View {
         LazyVGrid(columns: columns, alignment: .listRowSeparatorLeading, spacing: 8) {
             ForEach(ActivityType.allCases, id: \.self)  {activityType in
                 CategoryCell(activityType: activityType)
+                    .onTapGesture {
+                        tappedCategory = activityType.koreanTitle()
+                    }
             }
         }
     }
 }
 
 struct SetImageView: View {
-    var activityType: ActivityType
+    var activityType: String
     
     var body: some View {
-        Text(activityType.description())
+        Text(activityType)
     }
 }
