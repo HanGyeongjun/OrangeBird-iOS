@@ -11,7 +11,6 @@ import SwiftData
 @Model
 class User: Identifiable {
     @Attribute(.unique) var id = UUID()
-    @Relationship var Activities: [Activity]?
     var username: String
     var designationPrefix: DesignationPrefix
     var desionationSuffix: DesignationSuffix

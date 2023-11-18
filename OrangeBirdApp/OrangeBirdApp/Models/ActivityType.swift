@@ -14,6 +14,19 @@ enum ActivityType: Int, Codable {
     case recycle
     case plogging
     
+    func color() -> Color {
+        switch self {
+        case.ecoStuff:
+            return .usearthYellow
+        case.diy:
+            return .usearthOrange
+        case.plogging:
+            return .usearthPurple
+        case.recycle:
+            return .usearthBlue
+        }
+    }
+
     func description() -> String {
         switch self {
         case.ecoStuff:
