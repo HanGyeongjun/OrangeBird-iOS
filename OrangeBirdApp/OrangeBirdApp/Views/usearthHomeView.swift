@@ -158,7 +158,7 @@ struct usearthHomeView: View {
                             .frame(width: 60, height: 16)
                             .foregroundStyle(Color.usEarthPrimary)
                             .opacity(0.6)
-                        Text(getActivityType(index: maxIndex).koreanTitle())
+                        Text(categoryCount[maxIndex] == 0 ? "" : getActivityType(index: maxIndex).koreanTitle())
                             .orangeBirdTitle1()
                             .foregroundStyle(Color.gray8)
                     }
